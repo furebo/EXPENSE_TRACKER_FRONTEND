@@ -5,24 +5,12 @@ import {UserContext} from '../../context/UserContext';
 import CharAvatar from '../Cards/CharAvatar';
 
 const SideMenue = ({activeMenue}) => {
-  const {user,clearUser} = useContext(UserContext);
+  const {user} = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleClick = (route) => {
-    if(route==="logout"){
-      handleLogout();
-      return;
-    }
     navigate(route);
   };
-  const handleLogout = () => {
-    localStorage.clear();
-    clearUser();
-    navigate("/login");
-  };
-  console.log("These are side menu data: ",SIDE_MENU_DATA);
-  console.log("This is the user from UserContext :",user);
-
   return <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20'>
       <div className='flex flex-col items-center justify-center gap-3 mt-3 mb-3'>
         {user?.profileImageUrl ? (

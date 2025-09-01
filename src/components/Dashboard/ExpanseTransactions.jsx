@@ -16,7 +16,7 @@ const ExpanseTransactions = ({transactions,onSeeMore}) => {
                 return <TransactionInfoCard
                 key={expense._id}
                 title={expense.category}
-                icon={<LuUtensils />}
+                icon={expense.icon}
                 date={moment(expense.createdAt).format("DD MMM YYYY")}
                 amount={expense.amount}
                 type="expense"

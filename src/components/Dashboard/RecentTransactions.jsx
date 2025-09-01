@@ -18,7 +18,7 @@ const RecentTransactions = ({transactions, onSeeMore}) => {
                   <TransactionInfoCard 
                       key={item._id}
                       title={item.type === "expanse" ? item.category : item.source}
-                      icon={<LuUtensils/>}
+                      icon={item.icon}
                       date={moment(item.createdAt).format("DD MMM YYYY")}
                       amount={item.amount}
                       type={item.type}
