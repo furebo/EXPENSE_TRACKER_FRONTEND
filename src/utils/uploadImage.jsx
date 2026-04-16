@@ -12,7 +12,6 @@ const uploadImage = async(imageFile) => {
                 "Content-Type":"multipart/form-data"
             }
         });
-
         return response.data; //return response data
 
     } catch (error) {
