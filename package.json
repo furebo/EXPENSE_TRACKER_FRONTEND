@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"furebo.github.io/expanse_tracker_frontend",
+  "homepage":"furebo.github.io/EXPANSE_TRACKER_FRONTEND",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
