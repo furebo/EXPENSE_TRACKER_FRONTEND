@@ -18,6 +18,7 @@ const App = () => {
           <Route path='/dashboard' exact element={<Home />}/>
           <Route path='/income' exact element={<Income />}/>
           <Route path='/expanse' exact element={<Expanses />}/>
+          <Route path='/logout' element={<Root />}/>
         </Routes>
       </Router>
    </UserProvider>

@@ -17,9 +17,15 @@ const ProfilePhotoSelector = ({image,setImage}) => {
    }
    //function to remove the image
    const handleRemoveImage = () => {
+      if (previeUrl) {
+          URL.revokeObjectURL(previeUrl); // 🧹 clean memory
+        }
     setImage(null);
     setPrevieUrl(null);
-   }
+     if (inputRef.current) {
+         inputRef.current.value = "";
+  }
+}
 
    const onChoseFile = ()=>{
     inputRef.current.click();
