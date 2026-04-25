@@ -6,7 +6,7 @@ const ProfilePhotoSelector = ({image,setImage}) => {
    const [previeUrl,setPrevieUrl] = useState(null);
    //function to change the image
    const handleImageChange = (event) => {
-    const file = event.target.files[0];
+       const file = event.target.files[0];
     if(file){
         //update the image state
         setImage(file)
@@ -48,7 +48,7 @@ const ProfilePhotoSelector = ({image,setImage}) => {
                  className='w-8 h-8 flex items-center justify-center bg-purple-500 text-white rounded-full absolute -bottom-1 -right-1 '
                  >
                  
-                    <LuUpload />
+                <LuUpload />
                 </button>
             </div>
         ): (
